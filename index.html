@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subaharini | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+    scroll-behavior:smooth;
+}
+body{
+    display:flex;
+    min-height:100vh;
+    color:#333333;
+    background:#f4f6f9;
+}
+.sidebar{
+    width:260px;
+    background:#0f766e;
+    padding:30px 20px;
+    position:fixed;
+    height:100%;
+    box-shadow:2px 0 15px rgba(0,0,0,0.08);
+    text-align:center;
+}
+.profile-img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #ffffff;
+    margin-bottom:15px;
+}
+.sidebar h2{
+    margin:10px 0 5px;
+    font-size:22px;
+    color:#ffffff;
+}
+.sidebar p{
+    font-size:14px;
+    color:#d1fae5;
+    margin-bottom:25px;
+}
+.sidebar a{
+    display:block;
+    color:#ffffff;
+    text-decoration:none;
+    padding:12px;
+    margin:8px 0;
+    border-radius:6px;
+    transition:0.3s;
+}
+.sidebar a:hover,
+.sidebar a.active{
+    background:#ffffff;
+    color:#0f766e;
+    font-weight:600;
+}
+.main{
+    margin-left:260px;
+    padding:60px;
+    width:100%;
+}
+section{
+    padding:40px 0;
+}
+h2{
+    margin-bottom:20px;
+    font-size:28px;
+    color:#222;
+}
+.card{
+    background:#ffffff;
+    padding:20px;
+    margin:15px 0;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+.card:hover{
+    transform:translateY(-5px);
+}
+.year{
+    font-size:14px;
+    color:#666;
+}
+.company{
+    font-weight:600;
+    margin-top:5px;
+}
+ul{
+    margin-top:10px;
+    padding-left:20px;
+}
+footer{
+    text-align:center;
+    padding:20px;
+    background:#ffffff;
+    font-size:14px;
+    color:#777;
+    border-top:1px solid #eee;
+}
+@media(max-width:768px){
+    body{
+        flex-direction:column;
+    }
+    .sidebar{
+        width:100%;
+        height:auto;
+        position:relative;
+    }
+    .main{
+        margin-left:0;
+        padding:30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+    <img src="C:\Users\deepakraj\Downloads\WhatsApp Image 2026-02-22 at 7.27.01 PM.jpeg" class="profile-img" alt="Profile Photo">
+    <h2>Subaharini S</h2>
+    <p>AI & DS Student</p>
+
+    <a href="#about" class="active">About</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Internship</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#hackathons">Hackathons</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<div class="main">
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+           I am a passionate B.Tech student in Artificial Intelligence and Data Science. 
+           I enjoy solving real-world problems using data analytics, machine learning, 
+           and business intelligence tools.
+        </p>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <div class="card">
+        <h3>B.Tech – Artificial Intelligence and Data Science</h3>
+        <p>K.S. Rangasamy College of Technology</p>
+        <p>2023 – 2027 | CGPA: 8.37</p>
+    </div>
+
+    <div class="card">
+        <h3>Higher Secondary Certificate</h3>
+        <p>Government Higher Secondary School | 80%</p>
+    </div>
+</section>
+<section id="experience">
+    <h2>Internship</h2>
+
+    <div class="card">
+        <h3>Data Analytics Intern</h3>
+        <span class="year">Sep 2025 – Nov 2025</span>
+        <p class="company">NexGen Nextopia</p>
+        <ul>
+            <li>Developed a Voice of Customer Feedback Dashboard using Power BI, Excel, and SQL.</li>
+            <li>Performed data cleaning, transformation, and KPI design.</li>
+            <li>Built interactive dashboards for business insights.</li>
+            <li>Supported data-driven decision making for hotel management.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Data Science Virtual Intern</h3>
+        <span class="year">Apr 2025 – Jun 2025</span>
+        <p class="company">Altair RapidMiner</p>
+        <ul>
+            <li>Applied data preprocessing, exploratory data analysis (EDA), and machine learning techniques on real-world datasets.</li>
+            <li>Built predictive models and visual dashboards using Altair tools to support data-driven decision making.</li>
+        </ul>
+    </div>
+
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="card">Python</div>
+    <div class="card">Java</div>
+    <div class="card">SQL / MySQL</div>
+    <div class="card">Power BI</div>
+    <div class="card">Web Development</div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Crop Vista</h3>
+        <p>Java-based crop management system using JDBC and MySQL.</p>
+    </div>
+
+    <div class="card">
+        <h3>Online Gift Store</h3>
+        <p>Responsive e-commerce website with cart and checkout functionality.</p>
+    </div>
+</section>
+
+<section id="certifications">
+    <h2>Certifications</h2>
+    <div class="card">Elite – NPTEL English for Competitive Exams</div>
+    <div class="card">NPTEL – Joy of Computing using Python</div>
+    <div class="card">Data Analytics with Python – Certificate</div>
+    <div class="card">Advanced R Programming with Data Analytics</div>
+</section>
+
+<section id="hackathons">
+    <h2>Hackathons</h2>
+    <div class="card">
+        Top 100 Finalist – Odoo × SNS 24-Hour Hackathon (2000+ registrations)
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Phone: 9098752233</p>
+        <p>Email: subaharini1507@gmail.com</p>
+        <p>GitHub: github.com/SubahariniS</p>
+        <p>LinkedIn: linkedin.com/in/subaharini-s-145097321</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Subaharini S | Portfolio
+</footer>
+
+</div>
+</body>
+</html>
